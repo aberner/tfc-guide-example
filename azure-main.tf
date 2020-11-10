@@ -45,7 +45,7 @@ resource "azurerm_network_security_group" "azure-web-nsg" {
     protocol                   = "Tcp"
     source_port_range          = "*"
     destination_port_range     = "80"
-    source_address_prefix      = "Internet"
+    source_address_prefix      = "internet"
     destination_address_prefix = "*"
   }
 
@@ -58,7 +58,7 @@ resource "azurerm_network_security_group" "azure-web-nsg" {
     protocol                   = "Tcp"
     source_port_range          = "*"
     destination_port_range     = "22"
-    source_address_prefix      = "Internet"
+    source_address_prefix      = "internet"
     destination_address_prefix = "*"
   }
   tags = {
